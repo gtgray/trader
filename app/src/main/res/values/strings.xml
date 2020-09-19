@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">Tradernet</string>
+
+    <string name="nothing_here">Nothing here</string>
+    <string name="pipeline">|</string>
+
+</resources>

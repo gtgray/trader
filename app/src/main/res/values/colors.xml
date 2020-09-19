@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="clr_transparent">#00000000</color>
+
+    <color name="clr_white">#ffffffff</color>
+
+    <color name="clr_black">#ff000000</color>
+    <color name="clr_black_15">#26000000</color>
+    <color name="clr_black_55">#8c000000</color>
+    <color name="clr_black_85">#d9000000</color>
+
+    <color name="clr_primary_dark">#ff3700b3</color>
+    <color name="clr_primary">#ff6200ee</color>
+    <color name="clr_accent">#ff03dac5</color>
+
+    <color name="clr_torch_red">#ffff1744</color>
+    <color name="clr_malachite">#ff00c853</color>
+
+</resources>

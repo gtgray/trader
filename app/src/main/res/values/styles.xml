@@ -1,0 +1,12 @@
+<resources>
+
+    <style name="Theme.NoActionbar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/clr_primary_dark</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="colorPrimary">@color/clr_primary</item>
+        <item name="colorPrimaryDark">@color/clr_primary_dark</item>
+        <item name="colorAccent">@color/clr_accent</item>
+    </style>
+
+</resources>

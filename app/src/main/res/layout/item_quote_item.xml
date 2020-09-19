@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:background="@drawable/drw_back_rippled"
+    android:backgroundTint="@color/clr_white"
+    >
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/clr_black_15"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_ticker"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/ic_launcher_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+        android:visibility="gone"
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        app:layout_goneMarginStart="0dp"
+        android:textColor="@color/clr_black_85"
+        android:textSize="18sp"
+        android:textAllCaps="true"
+        tools:text="sber"
+        app:layout_constraintStart_toEndOf="@id/iv_ticker"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_rialto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/clr_black_55"
+        android:textSize="14sp"
+        android:textAllCaps="true"
+        tools:text="mcx"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_id"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_pipeline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_goneMarginStart="0dp"
+        android:text="@string/pipeline"
+        android:textColor="@color/clr_black_55"
+        android:textSize="14sp"
+        android:textAllCaps="true"
+        app:layout_constraintStart_toEndOf="@id/tv_rialto"
+        app:layout_constraintTop_toTopOf="@id/tv_rialto"
+        app:layout_constraintBottom_toBottomOf="@id/tv_rialto"
+        />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_goneMarginStart="0dp"
+        android:textColor="@color/clr_black_55"
+        android:textSize="14sp"
+        tools:text="sberbank"
+        app:layout_constraintStart_toEndOf="@id/tv_pipeline"
+        app:layout_constraintTop_toTopOf="@id/tv_pipeline"
+        app:layout_constraintBottom_toBottomOf="@id/tv_pipeline"
+        />
+
+    <TextView
+        android:id="@+id/tv_percents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/clr_white"
+        android:textSize="18sp"
+        tools:text="+3.18%"
+        android:background="@drawable/drw_label_rounded"
+        android:backgroundTint="@color/clr_malachite"
+        app:layout_constraintTop_toTopOf="@id/tv_id"
+        app:layout_constraintEnd_toStartOf="@id/iv_arrow"
+        />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/clr_black_85"
+        android:textSize="14sp"
+        tools:text="345.123"
+        app:layout_constraintTop_toTopOf="@id/tv_points"
+        app:layout_constraintEnd_toStartOf="@id/tv_points"
+        />
+
+    <TextView
+        android:id="@+id/tv_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/clr_black_85"
+        android:textSize="14sp"
+        tools:text="( +0.000 123 )"
+        app:layout_constraintTop_toBottomOf="@id/tv_percents"
+        app:layout_constraintEnd_toEndOf="@id/tv_percents"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_arrow"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:srcCompat="@drawable/svg_arrow_right"
+        app:tint="@color/clr_black_55"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
